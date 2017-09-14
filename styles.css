@@ -1,0 +1,317 @@
+body {
+    margin: 2em;
+    background: #fff;
+}
+.c-block {
+    font: 105% sans;
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+    padding: .5em;
+    background: #ff0000;
+}
+.violet{background: blueviolet}
+.blueviolet{background: royalblue}
+.blue{background: dodgerblue}
+.bluegreen{background: CadetBlue}
+.green{background: mediumseagreen}
+.greenyellow{background: greenyellow}
+.yellow{background: yellow}
+.gold{background: gold}
+.orange{background: orange}
+.redorange{background: orangered}
+.red{background: red}
+.redviolet{background: darkorchid}
+
+.grid {
+    display: grid;
+
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 5em 5em 5em;
+}
+.grid-1 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+/*grid 1*/
+
+.grid-1 .green {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    border: 2px solid black;
+    opacity: 0.6;
+}
+.grid-1 .orange {
+    grid-column: 2/3;
+    grid-row: 2/2;
+
+    border: 2px solid black;
+    opacity: 0.6;
+}
+.grid-1 .yellow {
+    grid-column: 3/4;
+    grid-row: 3/2;
+
+    border: 2px solid black;
+    opacity: 0.6;
+}
+.grid-1 .redviolet {
+    grid-column: 3/4;
+    grid-row: 4/3;
+
+    border: 2px solid black;
+    opacity: 0.6;
+}
+/*grid 2*/
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.grid-2 .violet {
+    grid-column: 1/5;
+    grid-row: 1/1;
+
+    border: 2px solid black;
+    opacity: 0.6;
+}
+.grid-2 .green {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    border: 2px solid black;
+    opacity: 0.6;
+}
+.grid-2 .orange {
+    grid-column: 2/3;
+    grid-row: 4/3;
+
+    border: 2px solid black;
+    opacity: 0.6;
+}
+.grid-2 .yellow {
+    grid-column: 3/4;
+    grid-row: 3/2;
+
+    border: 2px solid black;
+    opacity: 0.6;
+}
+.grid-2 .redviolet {
+    grid-column: 3/4;
+    grid-row: 4/3;
+
+    border: 2px solid black;
+    opacity: 0.6;
+}
+.grid-2 .blueviolet {
+    grid-column: 1/2;
+    grid-row: 2/4;
+
+    border: 2px solid black;
+    opacity: 0.6;
+}
+/*grid 3*/
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.grid-3 .violet {
+    grid-column: 1/5;
+    grid-row: 1/1;
+
+    border: 2px solid black;
+    opacity: 0.6;
+}
+.grid-3 .green {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    border: 2px solid black;
+    opacity: 0.6;
+}
+.grid-3 .orange {
+    grid-column: 2/3;
+    grid-row: 4/3;
+
+    border: 2px solid black;
+    opacity: 0.6;
+}
+.grid-3 .yellow {
+    grid-column: 3/4;
+    grid-row: 3/2;
+
+    border: 2px solid black;
+    opacity: 0.6;
+}
+.grid-3 .redviolet {
+    grid-column: 3/4;
+    grid-row: 4/5;
+
+    border: 2px solid black;
+    opacity: 0.6;
+}
+.grid-3 .red {
+    grid-column: 3/5;
+    grid-row: 3/4;
+
+    border: 2px solid black;
+    opacity: 0.6;
+}
+/*grid 4*/
+
+.grid-4 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/*grid 5*/
+
+.grid-5 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 3fr 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+/*grid 6*/
+
+.grid-6 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+}
+/*grid 7*/
+
+.grid-7 {
+    display: grid;
+    width: 100%;
+    grid-template-columns:  [left-sidebar-start] 1fr 1em 1fr [left-sidebar-end] 1em
+                            [main-area-start] 1fr repeat(7, [gutter] 1em [row] 1fr) [main-area-end] 1em
+                            [right-sidebar-start] 1fr 1em 1fr [right-sidebar-end];
+    grid-template-rows: [header-start] 1fr [header-end] 1em
+                        [main-start] 3fr [main-end] 1em
+                        [footer-start] 1fr [footer-end];
+}
+.grid-7 .violet {
+    grid-column: left-sidebar-start / right-sidebar-end;
+    grid-row: header-start / header-end;
+}
+.grid-7 .blueviolet {
+    grid-column: left-sidebar-start / left-sidebar-end;
+    grid-row: main-start / main-end;
+}
+.grid-7 .blue {
+    grid-column: main-area-start / main-area-end;
+    grid-row: main-start / main-end;
+}
+.grid-7 .bluegreen {
+    grid-column: right-sidebar-start / right-sidebar-end;
+    grid-row: main-start / main-end;
+}
+.grid-7 .green {
+    grid-column: left-sidebar-start / right-sidebar-end;
+    grid-row: footer-start / footer-end;
+}
+
+/*grid 8*/
+
+.grid-8 {
+    display: grid;
+    width: 100%;
+    grid-template-columns:  [left-sidebar-start] 1fr 1em 1fr [left-sidebar-end] 1em
+    [main-area-start] 1fr repeat(7, [gutter] 1em [row] 1fr) [main-area-end] 1em
+    [right-sidebar-start] 1fr 1em 1fr [right-sidebar-end];
+    grid-template-rows: [header-start] 1fr [header-end] 1em
+    [main-start] 3fr [main-end] 1em
+    [footer-start] 1fr [footer-end];
+}
+.grid-8 .violet {
+    grid-column: left-sidebar-start / right-sidebar-end;
+    grid-row: header-start / header-end;
+}
+.grid-8 .blueviolet {
+    grid-column: left-sidebar-start / left-sidebar-end;
+    grid-row: main-start / main-end;
+}
+.grid-8 .blue {
+    grid-column: main-area-start / gutter 4;
+    grid-row: main-start / main-end;
+}
+.grid-8 .greenyellow {
+    grid-column: gutter 4 / main-area-end;
+    grid-row: main-start / main-end;
+}
+.grid-8 .bluegreen {
+    grid-column: right-sidebar-start / right-sidebar-end;
+    grid-row: main-start / main-end;
+}
+.grid-8 .green {
+    grid-column: left-sidebar-start / right-sidebar-end;
+    grid-row: footer-start / footer-end;
+}
+
+/*grid 9*/
+
+.grid-9 {
+    display: grid;
+    width: 100%;
+    grid-template-columns:  [left-sidebar-start] 1fr 1em 1fr [left-sidebar-end] 1em
+    [main-area-start] 1fr repeat(7, [gutter] 1em [row] 1fr) [main-area-end] 1em
+    [right-sidebar-start] 1fr 1em 1fr [right-sidebar-end];
+    grid-template-rows: [header-start] 1fr [header-end] 1em
+    [main-start] 3fr [main-end] 1em
+    [footer-start] 1fr [footer-end];
+}
+.grid-9 .violet {
+    grid-column: left-sidebar-start / right-sidebar-end;
+    grid-row: header-start / header-end;
+}
+.grid-9 .blueviolet {
+    grid-column: left-sidebar-start / left-sidebar-end;
+    grid-row: main-start / main-end;
+}
+.grid-9 .blue {
+    grid-column: main-area-start / gutter 4;
+    grid-row: main-start / main-end;
+}
+.grid-9 .greenyellow {
+    grid-column: row 4 / main-area-end;
+    grid-row: main-start / main-end;
+}
+.grid-9 .bluegreen {
+    grid-column: right-sidebar-start / right-sidebar-end;
+    grid-row: main-start / main-end;
+}
+.grid-9 .green {
+    grid-column: left-sidebar-start / right-sidebar-end;
+    grid-row: footer-start / footer-end;
+}
+/*grid 10*/
+
+.grid-10 {
+    display: grid;
+    width: 100%;
+    grid-template-columns:  1fr repeat(3, 1em 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header header header header"
+                         "leftsidebar . main main main . rightsidebar"
+                         "footer footer footer footer footer footer footer";
+}
+.grid-10 .violet {
+    grid-area: header;
+}
+.grid-10 .blueviolet {
+    grid-area: leftsidebar;
+}
+.grid-10 .blue {
+    grid-area: main;
+}
+.grid-10 .bluegreen {
+    grid-area: rightsidebar;
+}
+.grid-10 .green {
+    grid-area: footer;
+}
